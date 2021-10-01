@@ -1,0 +1,26 @@
+body {
+  background-image: url("images/backgroundimage1.jpg");
+  background-color: dimgrey;
+  background-repeat: no-repeat;
+  background-size:100%;
+  padding-left: 120;
+  padding-right: 120;
+  padding-bottom: 60;
+}
+p{
+  font-family: helvetica, sans-serif;
+}
+.header{
+  color: #4f4733;
+  font-size: 40;
+  font-family: impact, fantasy;
+}
+.descriptor{
+  font-family: times;
+}
+#div1{
+  padding-left: 120;
+  padding-right: 120;
+  background-color: lightgrey;
+  min-height: 900;
+}
