@@ -30,7 +30,7 @@ div{
   background-color: lightgrey;
   min-height: 900;
 }
-p::last-line {
+p::first-line {
   color: #5A513E;
   
 }
