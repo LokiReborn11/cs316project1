@@ -3,12 +3,30 @@ body {
   background-color: dimgrey;
   background-repeat: no-repeat;
   background-size:100%;
-  padding-left: 120;
-  padding-right: 120;
+  padding-left: 16%;
+  padding-right: 16%;
   padding-bottom: 60;
 }
 p{
   font-family: helvetica, sans-serif;
+}
+tr:hover{
+  background-color: red;
+}
+td.sm:hover{
+  background-color: blue;
+}
+td.csm:hover{
+  background-color: darkred;
+}
+
+td.ts:hover{
+  background-color: gold;
+}
+.thead{
+  background-color: #779696;
+  font-family: garamond;
+  color: darkblue;
 }
 .header{
   color: #4f4733;
@@ -18,9 +36,15 @@ p{
 .descriptor{
   font-family: times;
 }
+.factions{
+  border:1px solid black;
+}
+.bottomrow{
+  font-family: arial; 
+}
 #div1{
-  padding-left: 120;
-  padding-right: 120;
+  padding-left: 16%;
+  padding-right: 16%;
   background-color: lightgrey;
   min-height: 900;
 }
