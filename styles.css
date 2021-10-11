@@ -40,11 +40,15 @@ td.ts:hover{
   border:1px solid black;
 }
 .bottomrow{
-  font-family: arial; 
+  font-family: arial;
 }
 #div1{
   padding-left: 16%;
   padding-right: 16%;
   background-color: lightgrey;
   min-height: 900;
+}
+p::first-line {
+  color: #5A513E;
+
 }
