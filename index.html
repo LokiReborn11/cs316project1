@@ -69,8 +69,26 @@
             </center>
           </td>
         </tr>
-
+        
       </table>
-    </div>
+      <h2 class = "header">
+        <center>Sign up for Newsletter!:</center>
+        <form action="http://examples.funwebdev.com/process.php" method="GET" >
+          <br>First name: <input type = "text" name = "first_name" />
+          <br>Last name: <input type = "text" name = "last_name" />
+          <br>Email Address: <input type = "text" name = "email_address" />
+          <br><input type = "radio" name = "newsletter" value = "newsletter_yes"> Sign me up to receive the newsletter!
+          <br><label for="favfaction">Choose your favorite faction!:</label>
+
+            <select name="favfaction" id="favfaction">
+              <option value="spacemarines">Space Marines</option>
+              <option value="chaosmarines">Chaos Space Marines</option>
+              <option value="thousandsons">Thousand Sons</option>
+              
+            </select>
+          <br><input type = "submit" name = "submit" value = "Submit" />
+          <br><input type = "reset" name = "reset"  value = "Reset" />
+        </form>
+      </h2>
   </body>
 </html>
