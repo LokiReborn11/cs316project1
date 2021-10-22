@@ -23,6 +23,17 @@ td.csm:hover{
 td.ts:hover{
   background-color: gold;
 }
+figcaption.popup{
+  visibility: hidden;
+  position: absolute;
+  
+
+}
+figure.thumbnail:hover figcaption.popup{
+  visibility: visible;
+  position: absolute;
+  top: 0;
+}
 .thead{
   background-color: #779696;
   font-family: garamond;
@@ -45,7 +56,7 @@ td.ts:hover{
 
 .leftcol{
   float: left;
-  width: 20%;
+  width: 15%;
 }
 .midcol{
   width: 60%;
@@ -54,7 +65,7 @@ td.ts:hover{
 .rightcol{
   float: right;
   width: 15%;
-  padding left: 5%;
+  margin-left: 5%;
 }
 #div1{
 
