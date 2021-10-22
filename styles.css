@@ -43,9 +43,11 @@ td.ts:hover{
   font-family: arial;
 }
 
-.leftcol{
-  float: left;
-  width: 20%;
+.leftcol {
+    float: left;
+    width: 20%;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .midcol{
   width: 60%;
