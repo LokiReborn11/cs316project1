@@ -47,7 +47,7 @@ td.ts:hover{
     float: left;
     width: 20%;
 }
-    .leftcol :hover Click to Enlist {
+    .leftcol :hover {
         transform: scale(1.5)
     }
 .midcol{
