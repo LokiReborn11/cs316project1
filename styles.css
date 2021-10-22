@@ -47,9 +47,9 @@ td.ts:hover{
     float: left;
     width: 20%;
 }
-    .leftcol :hover {
-        transform: scale(1.5)
-    }
+.leftcol:hover {
+        transform: scale(1.5);
+}
 .midcol{
   width: 60%;
   float: left;
