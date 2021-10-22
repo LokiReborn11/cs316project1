@@ -3,8 +3,8 @@ body {
   background-color: dimgrey;
   background-repeat: no-repeat;
   background-size:100%;
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 60;
 }
 p{
@@ -42,9 +42,22 @@ td.ts:hover{
 .bottomrow{
   font-family: arial;
 }
+
+.leftcol{
+  float: left;
+  width: 20%;
+}
+.midcol{
+  width: 60%;
+  float: left;
+}
+.rightcol{
+  float: right;
+  width: 15%;
+  padding left: 5%;
+}
 #div1{
-  padding-left: 16%;
-  padding-right: 16%;
+
   background-color: lightgrey;
   min-height: 900;
 }
