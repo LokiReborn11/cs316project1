@@ -23,16 +23,6 @@ td.csm:hover{
 td.ts:hover{
   background-color: gold;
 }
-figcaption.popup{
-  visibility: hidden;
-  position: absolute;
-
-}
-figure.thumbnail:hover figcaption.popup{
-  visibility: visible;
-  position: absolute;
-  top: 0;
-}
 .thead{
   background-color: #779696;
   font-family: garamond;
@@ -53,9 +43,12 @@ figure.thumbnail:hover figcaption.popup{
   font-family: arial;
 }
 
-.leftcol{
-  float: left;
-  width: 15%;
+.leftcol {
+    float: left;
+    width: 20%;
+}
+.leftcol:hover {
+        transform: scale(1.5);
 }
 .midcol{
   width: 60%;
@@ -64,7 +57,7 @@ figure.thumbnail:hover figcaption.popup{
 .rightcol{
   float: right;
   width: 15%;
-  margin-left: 5%;
+  padding left: 5%;
 }
 #div1{
 
