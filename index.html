@@ -109,26 +109,28 @@
 
 
               <br><input type = "button" id = "newsletter" value = "Sign Up"/> Sign me up to receive the newsletter!
-              <br>Email Address:<br>
-              <div><input type = "text" id = "email_address" name = "email_address" secret = "hidden" hidden/></div>
-
+              <div id = "email_segment" secret = "hidden" hidden>
+              <br>Email Address:<br> 
+              <input type = "text" id = "email_address" name = "email_address" /></div>
+              
               <script>
                $(document).ready(function(){
                   $("#newsletter").click(function(){
-                    if($("#email_address").attr("secret") == "hidden"){
-                      $("#email_address").show();
-                      $("#email_address").attr("secret", "unhidden");
+                    if($("#email_segment").attr("secret") == "hidden"){
+                      $("#email_segment").show();
+                      $("#email_segment").attr("secret", "unhidden");
                     }
                     else{
-                      $("#email_address").hide();
-                      $("#email_address").attr("secret", "hidden");
+                      $("#email_segment").hide();
+                      $("#email_segment").attr("secret", "hidden");
                     }
-
+                    
                   });
-
+                    
                 });
 
-                  
+                
+                
               </script>
 
               <br><label for="favfaction">Choose your favorite faction!:</label>
