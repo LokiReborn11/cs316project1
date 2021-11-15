@@ -97,13 +97,13 @@
               
               <script>
                $(document).ready(function(){
-                  $("newsletter").click(function(){
+                  $("#newsletter").click(function(){
                     if($("#email_address").attr("secret") == "hidden"){
-                      $("email_address").show();
+                      $("#email_address").show();
                       $("#email_address").attr("secret", "unhidden");
                     }
                     else{
-                      $("email_address").hide();
+                      $("#email_address").hide();
                       $("#email_address").attr("secret", "hidden");
                     }
                     
