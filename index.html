@@ -87,20 +87,19 @@
               <br>First name:<br> <input type = "text" name = "first_name" />
               <br>Last name:<br> <input type = "text" name = "last_name" />
 
-              <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-              <script type="text/javascript">
-                $(function () {
-                  $("input[name=newsletter]").click(function () {
-                   if ($(this).val() == "Yes") {
-                    $("#email_address").removeAttr("disabled");
+              <script>
+              document.getElementById('newsletter').onclick = function() {
+                  var disabled = document.getElementById("email_address").disabled;
+                   if (disabled) {
+                    document.getElementById("email_address").disabled = false;
                    } else {
-                    $("#email_address").attr("disabled", "disabled");
+                    document.getElementById("email_address").disabled = true;
                   }
-                  });
-                });
-                </script>
+                  
+                }
+              </script>
 
-              <br><input type = "button" name = "newsletter" value = "Yes"/><input type = "button" name = "newsletter" value = "No"/> Sign me up to receive the newsletter!
+              <br><input type = "button" id = "newsletter"/> Sign me up to receive the newsletter!
               <br>Email Address:<br> 
               <div><input type = "text" id = "email_address" disabled = "disabled"/></div>
               
