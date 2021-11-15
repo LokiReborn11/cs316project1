@@ -2,7 +2,7 @@
   <head>
     <title>Warhammer Roster Maker</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
   </head>
   <body>
@@ -98,17 +98,7 @@
               <script>
                $(document).ready(function(){
                   $("newsletter").click(function(){
-                    var disabled = document.getElementById("email_address").disabled;
-                    //var hidden = document.getElementById("email_address").hidden;
-                     if (disabled) {
-                      document.getElementById("email_address").disabled = false;
-                      //document.getElementById("email_address").hidden = false;
-                      $("email_address").show();
-                     } else {
-                      document.getElementById("email_address").disabled = true;
-                      //document.getElementById("email_address").hidden = true;
-                      $("email_address").hide();
-                    }
+                    $("email_address").show();
                   });
                     
                 });
