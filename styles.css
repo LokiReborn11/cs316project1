@@ -23,6 +23,10 @@ td.csm:hover{
 td.ts:hover{
   background-color: gold;
 }
+.themeswitch{
+  float: right;
+  margin-right: 5%;
+}
 .thead{
   background-color: #779696;
   font-family: garamond;

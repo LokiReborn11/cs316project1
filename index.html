@@ -2,18 +2,36 @@
   <head>
     <title>Warhammer Roster Maker</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
   </head>
   <body>
     <div id = "div1" >
-      <h1 class = "header">
+      <h1 id = "header" class = "header">
         <center>Warhammer 40,000 Roster Maker</center>
+        <button id = "theme" onclick= "switchTheme()" type ="button" class="themeswitch">Dark Mode</button>
       </h1>
+      <script type="text/javascript">
+        function switchTheme(){
+          if (document.getElementById("theme").innerHTML === "Dark Mode"){
+            document.getElementById("theme").innerHTML = "Light Mode";
+            document.getElementById("div1").style.backgroundColor = "#423b3b";
+            document.getElementById("div1").style.color = "#3ac25a";
+            document.getElementById("header").style.color = "#3ac25a";
+          }else if(document.getElementById("theme").innerHTML === "Light Mode"){
+            document.getElementById("theme").innerHTML = "Dark Mode";
+            document.getElementById("div1").style.backgroundColor = "lightgrey";
+            document.getElementById("div1").style.color = "black";
+            document.getElementById("header").style.color = "#4f4733";
+          }
+        }
+
+      </script>
       <br>
       <div class="leftcol">
           File your application into the Imperial Guard today!!!
           <a href="enlist.html" title="Click to Enlist"><img src="images/propa1.jpg" alt="Propaganda1" width="230" height="500" /></a>
       </div>
-      
+
       <div class = "midcol">
         <p>
             <center> Click on an image to view lore about that faction </center>
@@ -87,12 +105,12 @@
               <br>First name:<br> <input type = "text" name = "first_name" />
               <br>Last name:<br> <input type = "text" name = "last_name" />
 
-              
+
 
               <br><input type = "button" id = "newsletter" name = "Sign Up"/> Sign me up to receive the newsletter!
-              <br>Email Address:<br> 
+              <br>Email Address:<br>
               <div><input type = "text" id = "email_address" name = "email_address" disabled = "disabled"/></div>
-              
+
               <script>
                 document.getElementById('newsletter').onclick = function() {
                     var disabled = document.getElementById("email_address").disabled;
@@ -101,10 +119,10 @@
                      } else {
                       document.getElementById("email_address").disabled = true;
                     }
-                    
+
                   }
               </script>
-              
+
               <br><label for="favfaction">Choose your favorite faction!:</label>
                 <select name="favfaction" id="favfaction">
                   <option value="spacemarines">Space Marines</option>
