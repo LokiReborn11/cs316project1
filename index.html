@@ -87,22 +87,23 @@
               <br>First name:<br> <input type = "text" name = "first_name" />
               <br>Last name:<br> <input type = "text" name = "last_name" />
 
-              <script>
-              document.getElementById('newsletter').onclick = function() {
-                  var disabled = document.getElementById("email_address").disabled;
-                   if (disabled) {
-                    document.getElementById("email_address").disabled = false;
-                   } else {
-                    document.getElementById("email_address").disabled = true;
-                  }
-                  
-                }
-              </script>
+              
 
               <br><input type = "button" id = "newsletter"/> Sign me up to receive the newsletter!
               <br>Email Address:<br> 
               <div><input type = "text" id = "email_address" name = "email_address" /></div>
               
+              <script>
+                document.getElementById('newsletter').onclick = function() {
+                    var disabled = document.getElementById("email_address").disabled;
+                     if (disabled) {
+                      document.getElementById("email_address").disabled = false;
+                     } else {
+                      document.getElementById("email_address").disabled = true;
+                    }
+                    
+                  }
+              </script>
               
               <br><label for="favfaction">Choose your favorite faction!:</label>
                 <select name="favfaction" id="favfaction">
