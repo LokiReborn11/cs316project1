@@ -94,25 +94,24 @@
               <div><input type = "text" id = "email_address" name = "email_address" disabled = "disabled" hidden/></div>
               
               <script>
-                document.getElementById('newsletter').onclick = function() {
+               $(document).ready(function(){
+                  $("newsletter").click(function(){
                     var disabled = document.getElementById("email_address").disabled;
                     //var hidden = document.getElementById("email_address").hidden;
                      if (disabled) {
                       document.getElementById("email_address").disabled = false;
                       //document.getElementById("email_address").hidden = false;
+                      $("email_address").show();
                      } else {
                       document.getElementById("email_address").disabled = true;
                       //document.getElementById("email_address").hidden = true;
+                      $("email_address").hide();
                     }
-                    
-                }
-
-                $(document).ready(function(){
-                  $("newsletter").click(function(){
-                    $("email_address").show();
                   });
+                    
                 });
 
+                
                 
               </script>
               
