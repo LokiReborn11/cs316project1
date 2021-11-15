@@ -91,7 +91,7 @@
 
               <br><input type = "button" id = "newsletter" value = "Sign Up"/> Sign me up to receive the newsletter!
               <br>Email Address:<br> 
-              <div><input type = "text" id = "email_address" name = "email_address" disabled = "disabled" /></div>
+              <div><input type = "text" id = "email_address" name = "email_address" disabled = "disabled" hidden/></div>
               
               <script>
                 document.getElementById('newsletter').onclick = function() {
@@ -108,12 +108,12 @@
                 }
 
                 $(document).ready(function(){
-                  $("email_address").hide();
+                  $("newsletter").click(function(){
+                    $("email_address").show();
+                  });
                 });
 
-                $("newsletter").click(function(){
-                  $("email_address").show();
-                });
+                
               </script>
               
               <br><label for="favfaction">Choose your favorite faction!:</label>
