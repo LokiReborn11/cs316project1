@@ -110,9 +110,9 @@
 
               <br><input type = "button" id = "newsletter" value = "Sign Up"/> Sign me up to receive the newsletter!
               <div id = "email_segment" secret = "hidden" hidden>
-              <br>Email Address:<br> 
+              <br>Email Address:<br>
               <input type = "text" id = "email_address" name = "email_address" /></div>
-              
+
               <script>
                $(document).ready(function(){
                   $("#newsletter").click(function(){
@@ -124,13 +124,13 @@
                       $("#email_segment").hide();
                       $("#email_segment").attr("secret", "hidden");
                     }
-                    
+
                   });
-                    
+
                 });
 
-                
-                
+
+
               </script>
 
               <br><label for="favfaction">Choose your favorite faction!:</label>
@@ -142,6 +142,17 @@
               <br><input type = "submit" name = "submit" value = "Submit" />
               <br><input type = "reset" name = "reset"  value = "Reset" />
             </form>
+        </div>
+        <div class = "footer">
+          <br>
+          <br>
+          <br>
+          <center>
+            <form action = "search.php" method ="POST">
+              Search by Name: <input type="text" name ="nsearch"/>
+              <input type="submit">
+            </form>
+          </center>
         </div>
     </div>
   </body>

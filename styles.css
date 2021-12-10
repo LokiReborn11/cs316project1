@@ -60,8 +60,11 @@ td.ts:hover{
 }
 .rightcol{
   float: right;
-  width: 15%;
-  padding left: 5%;
+  width: 20%;
+}
+.footer{
+  width: 100%;
+  float: left;
 }
 #div1{
 
