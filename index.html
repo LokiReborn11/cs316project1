@@ -106,28 +106,7 @@
           <br>
             <center>Sign up for Newsletter!:</center>
             <form action="http://examples.funwebdev.com/process.php" method="GET" >
-              <?php
-                $servername = "localhost";
-                $username = "username";
-                $password = "password";
-
-                // Create connection
-                $conn = new mysqli($servername, $username, $password);
-                // Check connection
-                if ($conn->connect_error) {
-                  die("Connection failed: " . $conn->connect_error);
-                }
-
-                // Create database
-                $sql = "CREATE DATABASE myDB";
-                if ($conn->query($sql) === TRUE) {
-                  echo "Database created successfully";
-                } else {
-                  echo "Error creating database: " . $conn->error;
-                }
-
-                $conn->close();
-              ?>
+              
               <br>First name:<br> <input type = "text" name = "first_name" />
               <br>Last name:<br> <input type = "text" name = "last_name" />
 
@@ -166,6 +145,28 @@
               <br><input type = "submit" name = "submit" value = "Submit" />
               <br><input type = "reset" name = "reset"  value = "Reset" />
             </form>
+            <?php
+                $servername = "localhost";
+                $username = "username";
+                $password = "password";
+
+                // Create connection
+                $conn = new mysqli($servername, $username, $password);
+                // Check connection
+                if ($conn->connect_error) {
+                  die("Connection failed: " . $conn->connect_error);
+                }
+
+                // Create database
+                $sql = "CREATE DATABASE myDB";
+                if ($conn->query($sql) === TRUE) {
+                  echo "Database created successfully";
+                } else {
+                  echo "Error creating database: " . $conn->error;
+                }
+
+                $conn->close();
+              ?>
             Welcome <?php echo $_GET["first_name"]; ?><br>
             Your email is: <?php echo $_GET["email_address"]; ?><br>
             Your favorite faction is: <?php echo $_GET["favfaction"]; ?>
