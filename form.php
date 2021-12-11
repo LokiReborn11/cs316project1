@@ -18,7 +18,7 @@
                   echo "Error creating database: " . $conn->error;
                 }
 
-                
+                echo "Name :".$_GET['first_name']."<br/>";
 
                 $conn->close();
               ?>
